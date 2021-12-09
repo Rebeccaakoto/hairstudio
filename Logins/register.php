@@ -12,9 +12,8 @@ if (isset($_POST['Register'])){
     $city= $_POST['city'];
     $contact=$_POST['contact'];
     $image= $_POST['img'];
-	
 
-	$hash = password_hash($pass, PASSWORD_DEFAULT);
+	$hash = sha1($pass);
 	//check if email exist
 
 	$register = customer_add($name,$email,$hash,$country,$city,$contact,$image);

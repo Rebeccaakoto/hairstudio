@@ -36,7 +36,7 @@ class productClass extends Connection
 
     function select_all_brands(){
         $sql= "SELECT * FROM brands";
-        return $this->query($sql);
+        return $this->fetch($sql);
      }
 
     public function deleteBrand($brandID){

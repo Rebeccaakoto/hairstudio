@@ -5,9 +5,8 @@ include('../settings/core.php');
 require("../Controllers/product_controller.php");
 
 $brands = select_all_brands_controller();
+
 check_admin_login();
-
-
 
 ?>
 

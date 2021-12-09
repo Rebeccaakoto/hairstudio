@@ -109,4 +109,10 @@
     
         return $admin_actions->viewAllAdmins();
     }
+
+    function login_controller($email, $pass) {
+        $admin_actions = new Customer_class();
+        return $admin_actions->login($email, $pass);
+    }
+
 ?>

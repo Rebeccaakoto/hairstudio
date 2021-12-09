@@ -30,6 +30,11 @@
             return $this->fetch($query);
         }
 
+        function login($email, $pass){
+            $query = "SELECT * FROM `customer` WHERE `customer_name`= '$email' AND `customer_pass`='$pass';";
+            return $this->fetch($query);
+        }
+
         function viewAllCustomers(){
             $query = "select * from customer where user_role = 2 order by customer_id;";
             return $this->fetch($query);
