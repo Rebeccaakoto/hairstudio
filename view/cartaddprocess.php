@@ -17,7 +17,7 @@ require("../controllers/cart_controller.php");
         ?>
         <script type="text/javascript">
         alert("Product is already in cart. Consider increasing qty in your cart");
-        window.location.href = "../cart.php";
+        window.location.href = "../view/cart.php";
         </script>
         <?php
         }else{

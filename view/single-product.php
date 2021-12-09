@@ -561,17 +561,7 @@ $qty = 1;
                         <!-- Single Call-to Action End -->
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
-                        <!-- Single Call-to Action Start -->
-                        <div class="single-callto-action d-flex">
-                            <figure class="callto-thumb">
-                                <img src="assets/img/cog.png" alt="Guide"/>
-                            </figure>
-                            <div class="callto-info">
-                                <h2>SHOPPING GUIDE</h2>
-                                <p>Quis Eum Iure Reprehenderit</p>
-                            </div>
-                        </div>
+                    
                         <!-- Single Call-to Action End -->
                     </div>
                 </div>

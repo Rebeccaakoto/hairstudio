@@ -576,7 +576,7 @@ $qty = 1;
                                 <a href="#"><i class="fa fa-flickr"></i></a>
                             </div>
 
-                            <a href="#"><img src="assets/img/payment.png" alt="Payment Method"/></a>
+                            
                         </div>
                     </div>
                 </div>

@@ -70,7 +70,6 @@
             return false;
         }
     }
-
     function CustomerLoginInfo($email){
         //create an instance
         $newCustomerObject = new Customer_class();
@@ -95,6 +94,7 @@
             return false;
         }
     }
+     
 
     function deleteOneCustomerController($customer_id){
     

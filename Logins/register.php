@@ -13,7 +13,7 @@ if (isset($_POST['Register'])){
     $contact=$_POST['contact'];
     $image= $_POST['img'];
 
-	$hash = sha1($pass);
+	$hash = password_hash($pass, PASSWORD_DEFAULT);
 	//check if email exist
 
 	$register = customer_add($name,$email,$hash,$country,$city,$contact,$image);

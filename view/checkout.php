@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+
 
 <!doctype html>
 <html lang="en">
@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
       <link rel="stylesheet" href="../css/custom.css">
 
-    <title>Cart</title>
+    <title>Checkout</title>
   </head>
   <body>
     <?php
-      
+      require("../settings/core.php");
       require_once("../controllers/cart_controller.php");
       if (isset($_SESSION['customer_id'])){
           $cid = $_SESSION['customer_id'];
@@ -23,7 +23,7 @@
           $checkOutAmt = cartValue_fxn($cid);
 
       }else{
-          header("location: ../Logins/login-register.html");
+         
           $ipadd = getRealIpAddr();
           $cart = displayCartNull_fxn($ipadd);
           $checkOutAmt = cartValueNull_fxn($ipadd);
@@ -49,7 +49,7 @@
                 <input type="hidden" name="pid" value="<?= $key ?>">
               </div>
               <button type="submit" class="btn mx-sm-3 btn-primary mb-2">Update Quantity</button>
-              <a href="<?php echo "../functions/remove_from_cart.php?id=".$key; ?>" class="btn btn-danger  mb-2">Remove From Cart</a>
+              <a href="<?php echo "../actions/remove_cart.php?id=".$key; ?>" class="btn btn-danger  mb-2">Remove From Cart</a>
             </form>
           </div>
         </div>

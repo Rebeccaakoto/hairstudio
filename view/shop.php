@@ -222,8 +222,8 @@ if(isset($_GET['pid'])){
                 <div class="page-title-content">
                     <h1>Shop</h1>
                     <ul class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html" class="active">Shop</a></li>
+                        <li><a href="../index.php">Home</a></li>
+                        <li><a href="../index.php" class="active">Shop</a></li>
                     </ul>
                 </div>
             </div>
@@ -804,7 +804,7 @@ if(isset($_GET['pid'])){
                                 <a href="#"><i class="fa fa-flickr"></i></a>
                             </div>
 
-                            <a href="#"><img src="../assets/img/payment.png" alt="Payment Method"/></a>
+                           
                         </div>
                     </div>
                 </div>

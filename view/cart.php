@@ -60,7 +60,7 @@
             <!-- Logo Area Start -->
             <div class="col-3 col-lg-1 col-xl-2 m-auto">
                 <a href="index.html" class="logo-area">
-                    <img src="../asset/img/logo-black.png" alt="Logo" class="img-fluid"/>
+                    <img src="../assets/img/logo-black.png" alt="Logo" class="img-fluid"/>
                 </a>
             </div>
             <!-- Logo Area End -->
@@ -141,7 +141,7 @@
                                 <div class="mini-cart-body">
                                     <div class="single-cart-item d-flex">
                                         <figure class="product-thumb">
-                                            <a href="#"><img class="img-fluid" src="../asset/img/product-1.jpg"
+                                            <a href="#"><img class="img-fluid" src="../assets/img/product-1.jpg"
                                                              alt="Products"/></a>
                                         </figure>
 
@@ -157,7 +157,7 @@
                                     </div>
                                     <div class="single-cart-item d-flex">
                                         <figure class="product-thumb">
-                                            <a href="#"><img class="img-fluid" src="../asset/img/product-2.jpg"
+                                            <a href="#"><img class="img-fluid" src="../assets/img/product-2.jpg"
                                                              alt="Products"/></a>
                                         </figure>
                                         <div class="product-details">
@@ -172,7 +172,7 @@
                                     </div>
                                     <div class="single-cart-item d-flex">
                                         <figure class="product-thumb">
-                                            <a href="#"><img class="img-fluid" src="../asset/img/product-3.jpg"
+                                            <a href="#"><img class="img-fluid" src="../assets/img/product-3.jpg"
                                                              alt="Products"/></a>
                                         </figure>
                                         <div class="product-details">
@@ -202,7 +202,7 @@
 
 <!--== Search Box Area Start ==-->
 <div class="body-popup-modal-area">
-    <span class="modal-close"><img src="../asset/img/cancel.png" alt="Close" class="img-fluid"/></span>
+    <span class="modal-close"><img src="../assets/img/cancel.png" alt="Close" class="img-fluid"/></span>
     <div class="modal-container d-flex">
         <div class="search-box-area">
             <div class="search-box-form">
@@ -284,7 +284,8 @@
                 </div>
             </div><br>
         </div><br>
-        <a href="checkout.php" class="btn-add-to-cart">Proceed To Checkout</a>
+        <a href="../Logins/login-register.html" class="btn-add-to-cart">Proceed To Checkout</a>
+        <a href="shop-right-full-wide.php" class="btn btn-primary">Continue shopping</a>
                 </div>
             </div>
         </div>
@@ -301,16 +302,7 @@
             <div class="callto-action-wrapper">
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
-                        <!-- Single Call-to Action Start -->
-                        <div class="single-callto-action d-flex">
-                            <figure class="callto-thumb">
-                                <img src="../asset/img/air-plane.png" alt="WorldWide Shipping"/>
-                            </figure>
-                            <div class="callto-info">
-                                <h2>Free Shipping Worldwide</h2>
-                                <p>On order over $150 - 7 days a week</p>
-                            </div>
-                        </div>
+                       
                         <!-- Single Call-to Action End -->
                     </div>
 
@@ -318,7 +310,7 @@
                         <!-- Single Call-to Action Start -->
                         <div class="single-callto-action d-flex">
                             <figure class="callto-thumb">
-                                <img src="../asset/img/support.png" alt="Support"/>
+                                <img src="../assets/img/support.png" alt="Support"/>
                             </figure>
                             <div class="callto-info">
                                 <h2>24/7 CUSTOMER SERVICE</h2>
@@ -328,33 +320,6 @@
                         <!-- Single Call-to Action End -->
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
-                        <!-- Single Call-to Action Start -->
-                        <div class="single-callto-action d-flex">
-                            <figure class="callto-thumb">
-                                <img src="../asset/img/money-back.png" alt="Money Back"/>
-                            </figure>
-                            <div class="callto-info">
-                                <h2>MONEY BACK Guarantee!</h2>
-                                <p>Send within 30 days</p>
-                            </div>
-                        </div>
-                        <!-- Single Call-to Action End -->
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <!-- Single Call-to Action Start -->
-                        <div class="single-callto-action d-flex">
-                            <figure class="callto-thumb">
-                                <img src="../asset/img/cog.png" alt="Guide"/>
-                            </figure>
-                            <div class="callto-info">
-                                <h2>SHOPPING GUIDE</h2>
-                                <p>Quis Eum Iure Reprehenderit</p>
-                            </div>
-                        </div>
-                        <!-- Single Call-to Action End -->
-                    </div>
                 </div>
             </div>
         </div>
@@ -368,7 +333,7 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <div class="follow-content-wrap">
-                            <a href="index.html" class="logo"><img src="../asset/img/logo.png" alt="logo"/></a>
+                            <a href="index.html" class="logo"><img src="../assets/img/logo.png" alt="logo"/></a>
                             <p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum</p>
 
                             <div class="footer-social-icons">
@@ -379,8 +344,7 @@
                                 <a href="#"><i class="fa fa-flickr"></i></a>
                             </div>
 
-                            <a href="#"><img src="../asset/img/payment.png" alt="Payment Method"/></a>
-                        </div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -396,22 +360,22 @@
                     <div class="col-lg-12">
                         <div class="imgage-gallery-carousel owl-carousel">
                             <div class="gallery-item">
-                                <a href="#"><img src="../asset/img/gallery-img-1.jpg" alt="Gallery"/></a>
+                                <a href="#"><img src="../assets/img/gallery-img-1.jpg" alt="Gallery"/></a>
                             </div>
                             <div class="gallery-item">
-                                <a href="#"><img src="../asset/img/gallery-img-2.jpg" alt="Gallery"/></a>
+                                <a href="#"><img src="../assets/img/gallery-img-2.jpg" alt="Gallery"/></a>
                             </div>
                             <div class="gallery-item">
-                                <a href="#"><img src="../asset/img/gallery-img-3.jpg" alt="Gallery"/></a>
+                                <a href="#"><img src="../assets/img/gallery-img-3.jpg" alt="Gallery"/></a>
                             </div>
                             <div class="gallery-item">
-                                <a href="#"><img src="../asset/img/gallery-img-4.jpg" alt="Gallery"/></a>
+                                <a href="#"><img src="../assets/img/gallery-img-4.jpg" alt="Gallery"/></a>
                             </div>
                             <div class="gallery-item">
-                                <a href="#"><img src="../asset/img/gallery-img-3.jpg" alt="Gallery"/></a>
+                                <a href="#"><img src="../assets/img/gallery-img-3.jpg" alt="Gallery"/></a>
                             </div>
                             <div class="gallery-item">
-                                <a href="#"><img src="../asset/img/gallery-img-2.jpg" alt="Gallery"/></a>
+                                <a href="#"><img src="../assets/img/gallery-img-2.jpg" alt="Gallery"/></a>
                             </div>
                         </div>
                     </div>
@@ -445,18 +409,18 @@
 
 <!--=======================Javascript============================-->
 <!--=== Jquery Min Js ===-->
-<script src="../asset/js/vendor/jquery-3.3.1.min.js"></script>
+<script src="../assets/js/vendor/jquery-3.3.1.min.js"></script>
 <!--=== Jquery Migrate Min Js ===-->
-<script src="../asset/js/vendor/jquery-migrate-1.4.1.min.js"></script>
+<script src="../assets/js/vendor/jquery-migrate-1.4.1.min.js"></script>
 <!--=== Popper Min Js ===-->
-<script src="../asset/js/vendor/popper.min.js"></script>
+<script src="../assets/js/vendor/popper.min.js"></script>
 <!--=== Bootstrap Min Js ===-->
-<script src="../asset/js/vendor/bootstrap.min.js"></script>
+<script src="../assets/js/vendor/bootstrap.min.js"></script>
 <!--=== Plugins Min Js ===-->
-<script src="../asset/js/plugins.js"></script>
+<script src="../assets/js/plugins.js"></script>
 
 <!--=== Active Js ===-->
-<script src="../asset/js/active.js"></script>
+<script src="../assets/js/active.js"></script>
 </body>
 
 </html>

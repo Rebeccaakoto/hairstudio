@@ -1,4 +1,10 @@
 
+
+<?php
+
+require("settings/core.php");
+require("controllers/cart.php");
+?>
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
@@ -118,52 +124,39 @@
                             </div>
                         </li>
                         <li class="shop-cart"><a href="#"><i class="fa fa-shopping-bag"></i> <span
-                                class="count">3</span></a>
+                                class="count"></span></a>
                             <div class="mini-cart">
                                 <div class="mini-cart-body">
                                     <div class="single-cart-item d-flex">
                                         <figure class="product-thumb">
-                                            <a href="#"><img class="img-fluid" src="assets/img/hair1.jpeg"
-                                                             alt="Products"/></a>
+                                            <?php
+                                        $ipadd = getRealIpAddr();
+                                        if(isset($_SESSION['customer_id'])){
+                                            $total = cartTotal_fxn($_SESSION['customer_id']);
+                                        }else{
+                                            $total = cartTotalNull_fxn($ipadd);
+                                        }
+                                        ?>
                                         </figure>
 
                                         <div class="product-details">
-                                            <h2><a href="#">Sprite Yoga Companion</a></h2>
-                                            <div class="cal d-flex align-items-center">
-                                                <span class="quantity">3</span>
-                                                <span class="multiplication">X</span>
-                                                <span class="price">$77.00</span>
-                                            </div>
+                                            
                                         </div>
                                         <a href="#" class="remove-icon"><i class="fa fa-trash-o"></i></a>
                                     </div>
                                     <div class="single-cart-item d-flex">
                                         <figure class="product-thumb">
-                                            <a href="#"><img class="img-fluid" src="assets/img/hair2.jpeg"
-                                                             alt="Products"/></a>
+                                            
                                         </figure>
-                                        <div class="product-details">
-                                            <h2><a href="#">Yoga Companion Kit</a></h2>
-                                            <div class="cal d-flex align-items-center">
-                                                <span class="quantity">2</span>
-                                                <span class="multiplication">X</span>
-                                                <span class="price">$6.00</span>
-                                            </div>
-                                        </div>
+                                       
                                         <a href="#" class="remove-icon"><i class="fa fa-trash-o"></i></a>
                                     </div>
                                     <div class="single-cart-item d-flex">
                                         <figure class="product-thumb">
-                                            <a href="#"><img class="img-fluid" src="assets/img/hair3.jpeg"
-                                                             alt="Products"/></a>
+                                            
                                         </figure>
                                         <div class="product-details">
-                                            <h2><a href="#">Sprite Yoga Companion Kit</a></h2>
-                                            <div class="cal d-flex align-items-center">
-                                                <span class="quantity">1</span>
-                                                <span class="multiplication">X</span>
-                                                <span class="price">$116.00</span>
-                                            </div>
+                                            
                                         </div>
                                         <a href="#" class="remove-icon"><i class="fa fa-trash-o"></i></a>
                                     </div>
