@@ -20,6 +20,21 @@ function addNewBrand($brandName){
     }
 }
 
+function add_brand_controller($name){
+    // create an instance of the Product class
+    $product_instance = new productClass();
+    // call the method from the class
+    return $product_instance->add_brands($name);
+
+} 
+
+function select_all_brands_controller(){
+    // create an instance of the Product class
+    $product_instance =  new productClass();
+    // call the method from the class
+    return $product_instance->select_all_brands();
+  }
+
 /*
 display all brands
 */
@@ -35,7 +50,7 @@ function returnBrands(){
 
         $brands = array();
 
-        while($record = $newProductObject->fetch()){
+        while($record = $newProductObject->fetchs()){
             $brands[$record['brand_id']] = $record['brand_name'];
         }
 
@@ -80,12 +95,7 @@ function deleteBrandName($brandID){
         return false;
     }
 }
-    function select_all_brands_controller(){
-        // create an instance of the Product class
-        $product_instance = new productClass();
-        // call the method from the class
-        return $product_instance->select_all_brands();
-     }
+    
 
 
 
@@ -198,20 +208,12 @@ function returnProduct($id){
 }
 
 //function to delete product
-function deleteProduct($id){
-    //create an instance of the class
-    $newProductObject = new productClass();
-
-    //run the select method
-    $runQuery = $newProductObject->deleteProduct($id);
-
-    //check if it worked
-    if($runQuery){
-        return $runQuery;
-    }else{
-        return false;
-    }
+function deleteOneProductController($id){
+    
+    $admin_actions =  new productClass();
+    return $admin_actions->deleteOneProduct($id);
 }
+
 
 //function to display products
 function displayProducts($start, $limit){

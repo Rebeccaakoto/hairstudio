@@ -19,7 +19,7 @@ check_admin_login();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Admin Panel for GlowSpot">
-    <meta name="author" content="Rebecca">
+    <meta name="author" content="rebbecca">
 
     <title>Rama Hair</title>
 
@@ -116,7 +116,7 @@ check_admin_login();
                     
                        <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productmodal">
-  Add New Product
+  Add New Brand
 </button>
                     </div>
                     <br>
@@ -128,51 +128,24 @@ check_admin_login();
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Product</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Add Brand</h5>
+        
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
       
-      <form method="POST" action="../actions/product_actions.php" class="row g-3">
+      <form method="POST" action="../actions/brand_actions.php" class="row g-3">
   <div class="col-md-6">
-    <label for="product_title" class="form-label">Product Name</label>
-    <input type="text" class="form-control" id="name" name="product_title">
+    <label for="product_title" class="form-label">Brand Name</label>
+    <input type="text" class="form-control" id="name" name="brand_name">
   </div>
   
-  <div class="col-md-6">
-    <label for="price" class="form-label">Price</label>
-    <input type="tel" class="form-control" id="price"  name="price">
-  </div>
-  <div class="col-md-6">
-    <label for="product_brand" class="form-label">Brand</label>
-    <select class="form-control" id="exampleFormControlSelect1" name="p_brand">
-                <option value="" selected disabled hidden>Choose here</option>
-                <?php
-                 foreach($brands as $brand ){
-                    echo "<option value=".$brand['brand_id'].">".$brand['brand_name']."</options>";
-                 }
-                ?>
-    </select>
-  </div>
-
-  <div class="col-md-6">
-    <label for="image" class="form-label">Image Link</label>
-    <input type="text" class="form-control" id="img" name="img">
-  </div>
-  <div class="col-md-6" >
-  <label for="desc" class="form-label">Description</label>
-  <input type="text" class="form-control" id="desc" name="desc">
-  </div>
-  <div class="col-md-6" >
-  <label for="keywords" class="form-label">Keywords</label>
-  <input type="text" class="form-control" id="key" name="key">
-  </div>
+ 
 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="submit" class="btn btn-primary" name= "addProduct">Add</button>
-        
       </div>
 
       </form>
@@ -199,11 +172,8 @@ check_admin_login();
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Name</th>
-      <th scope="col">Price</th>
-      <th scope="col">Description</th>
-      <th scope="col">Keywords</th>
-      <th scope="col">Actions</th>
+      <th scope="col">Brand Name</th>
+     
 
 
     </tr>
@@ -212,11 +182,9 @@ check_admin_login();
 
 <tbody>
     <tr>
-      <td><?php echo $searchresult["product_id"]; ?></td>
-      <td><?php echo $searchresult["product_name"]; ?></td>
-      <td><?php echo $searchresult["product_price"]; ?></td>
-      <td><?php echo $searchresult["product_desc"]; ?></td>
-      <td><?php echo $searchresult["product_keywords"]; ?></td>
+      <td><?php echo $searchresult["brand_id"]; ?></td>
+      <td><?php echo $searchresult["brand_name"]; ?></td>
+     
     </tr>
   </tbody>
   </table>
@@ -246,12 +214,12 @@ check_admin_login();
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h2 class="h3 mb-0 text-gray-800">All Products</h2>
+                        <h2 class="h3 mb-0 text-gray-800">All Brands</h2>
     </div>
 <?php
 
 
-$cerave = getAllProductsController();
+$cerave =  select_all_brands_controller();
 
 
 ?>
@@ -260,12 +228,8 @@ $cerave = getAllProductsController();
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Name</th>
-      <th scope="col">Price</th>
-      <th scope="col">Description</th>
-      <th scope="col">Keywords</th>
-      <th scope="col">Actions</th>
-
+      <th scope="col">Brand Name</th>
+     
 
     </tr>
   </thead>
@@ -278,20 +242,18 @@ $cerave = getAllProductsController();
 
   <tbody>
     <tr>
-    <td><?php echo $row1["product_id"] ?></td>
-      <td><?php echo $row1["product_title"] ?></td>
-      <td><?php echo $row1["product_price"] ?></td>
-      <td><?php echo $row1["product_desc"]; ?></td>
-      <td><?php echo $row1["product_keywords"]; ?></td>
+    <td><?php echo $row1["brand_id"] ?></td>
+      <td><?php echo $row1["brand_name"] ?></td>
+      
       <td> 
-      <form class="d-inline-flex" action="../actions/product_actions.php" method="post">
-                        <input hidden  name="ceraedit" value="<?php echo $row1['product_id']; ?>" />
-                        <button class="btn btn-primary" type="submit" name="ceraeditbtn" >edit</button>
+      <form class="d-inline-flex" action="../actions/brand_actions.php" method="post">
+                        <input hidden  name="ceraedit" value="<?php echo $row1['brand_id']; ?>" />
+                        <button class="btn btn-primary" type="submit" name="submit" >edit</button>
                     </form>   
          
 
-            <form class="d-inline-flex" action="../actions/product_actions.php" method="post">
-                <input type=hidden name="ceradel" value="<?php echo $row1['product_id']; ?>" />
+            <form class="d-inline-flex" action="../actions/brand_actions.php" method="post">
+                <input type=hidden name="ceradel" value="<?php echo $row1['brand_id']; ?>" />
                 <button class="btn btn-danger" type="submit" name="submit" >delete</button>
             </form>    
     </td>

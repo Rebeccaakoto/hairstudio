@@ -19,6 +19,15 @@ class productClass extends Connection
         return $this->query($sql);
     }
 
+    function add_brands($name) {
+
+        //formulate insert query
+        $sql = "INSERT INTO brands(`brand_name`) values('$name')";
+        //execute query
+        return $this->query($sql);
+
+    }
+
     public function displayBrands(){
         //sql query
         $sql = "SELECT `brand_id`, `brand_name` FROM `brands`";
@@ -47,7 +56,10 @@ class productClass extends Connection
     }
 
 
-  
+    function  deleteOneProduct($product_id) {
+        $query = "delete from products where product_id = '$product_id';";
+        return $this->query($query);
+    }
 
     
 
